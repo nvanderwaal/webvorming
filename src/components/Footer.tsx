@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { d0dge, site } from '@/lib/site'
 
 function NavLink({
   href,
@@ -12,7 +13,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
+      className="transition hover:text-blue-500 dark:hover:text-blue-400"
     >
       {children}
     </Link>
@@ -27,14 +28,15 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/over">Over</NavLink>
+                <NavLink href="/diensten">Diensten</NavLink>
+                <NavLink href="/projecten">Projecten</NavLink>
+                <NavLink href={d0dge.url}>d0dge</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} {site.name}. Alle rechten
+                voorbehouden.
               </p>
             </div>
           </ContainerInner>

@@ -1,10 +1,10 @@
 @import 'tailwindcss';
-@import './prism.css' layer(components);
-
-@plugin '@tailwindcss/typography';
-@config '../../typography.ts';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-doto: var(--font-doto-family), ui-monospace, monospace;
+}
 
 @theme {
   --text-xs: 0.8125rem;

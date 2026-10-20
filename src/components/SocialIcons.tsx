@@ -1,3 +1,44 @@
+export function FacebookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M21 12.055C21 7.054 16.97 3 12 3s-9 4.054-9 9.055c0 4.52 3.291 8.266 7.594 8.945v-6.328H8.309v-2.617h2.285v-1.995c0-2.27 1.343-3.523 3.4-3.523.984 0 2.014.177 2.014.177v2.228h-1.135c-1.118 0-1.467.697-1.467 1.414v1.699h2.496l-.399 2.617h-2.097V21C17.71 20.32 21 16.575 21 12.055Z" />
+    </svg>
+  )
+}
+
+export function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+      />
+    </svg>
+  )
+}
+
+export function PhoneIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M4.5 5.25A2.25 2.25 0 0 1 6.75 3h1.372c.86 0 1.61.586 1.819 1.42l.747 2.989a1.875 1.875 0 0 1-.694 1.955l-.87.652a.6.6 0 0 0-.216.67 9.05 9.05 0 0 0 5.406 5.406.6.6 0 0 0 .67-.216l.652-.87a1.875 1.875 0 0 1 1.955-.694l2.99.747A1.875 1.875 0 0 1 21 17.878v1.372A2.25 2.25 0 0 1 18.75 21.5h-1.5C10.208 21.5 4.5 15.792 4.5 8.75v-3.5Z"
+      />
+    </svg>
+  )
+}
+
+export function MapPinIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M11.54 21.81a.75.75 0 0 0 .92 0C14.13 20.52 19.5 16.07 19.5 10.5a7.5 7.5 0 0 0-15 0c0 5.57 5.37 10.02 7.04 11.31ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+      />
+    </svg>
+  )
+}
+
 export function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>

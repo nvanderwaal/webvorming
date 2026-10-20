@@ -1,19 +1,13 @@
-import nextMDX from '@next/mdx'
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  outputFileTracingIncludes: {
-    '/articles/*': ['./src/app/articles/**/*.mdx'],
+  output: 'export',
+  // Set by the GitHub Pages workflow when the site is served from a
+  // subpath (e.g. username.github.io/webvorming). Empty for a custom domain.
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || undefined,
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
   },
 }
 
-const withMDX = nextMDX({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: ['remark-gfm'],
-    rehypePlugins: ['@mapbox/rehype-prism'],
-  },
-})
-
-export default withMDX(nextConfig)
+export default nextConfig
